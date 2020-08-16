@@ -247,7 +247,13 @@
                                     </DataGridTemplateColumn.CellTemplate>
                                     <DataGridTemplateColumn.CellEditingTemplate>
                                         <DataTemplate>
-                                            <ComboBox SelectedItem="{Binding Manager}" ItemsSource="{Binding Employees}"></ComboBox>
+                                            <ComboBox SelectedItem="{Binding Manager}" ItemsSource="{Binding Employees}">
+                                                <ComboBox.ItemsPanel>
+                                                    <ItemsPanelTemplate>
+                                                        <VirtualizingStackPanel></VirtualizingStackPanel>
+                                                    </ItemsPanelTemplate>
+                                                </ComboBox.ItemsPanel>
+                                            </ComboBox>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellEditingTemplate>
                                 </DataGridTemplateColumn>
@@ -404,6 +410,11 @@
                                     <DataGridTemplateColumn.CellEditingTemplate>
                                         <DataTemplate>
                                             <ComboBox SelectedItem="{Binding Division}" ItemsSource="{Binding Divisions}">
+                                                <ComboBox.ItemsPanel>
+                                                    <ItemsPanelTemplate>
+                                                        <VirtualizingStackPanel></VirtualizingStackPanel>
+                                                    </ItemsPanelTemplate>
+                                                </ComboBox.ItemsPanel>
                                             </ComboBox>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellEditingTemplate>
@@ -530,7 +541,13 @@
                                     </DataGridTemplateColumn.CellTemplate>
                                     <DataGridTemplateColumn.CellEditingTemplate>
                                         <DataTemplate>
-                                            <ComboBox SelectedItem="{Binding Employee}" ItemsSource="{Binding Employees}"></ComboBox>
+                                            <ComboBox SelectedItem="{Binding Employee}" ItemsSource="{Binding Employees}">
+                                                <ComboBox.ItemsPanel>
+                                                    <ItemsPanelTemplate>
+                                                        <VirtualizingStackPanel></VirtualizingStackPanel>
+                                                    </ItemsPanelTemplate>
+                                                </ComboBox.ItemsPanel>
+                                            </ComboBox>
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellEditingTemplate>
                                 </DataGridTemplateColumn>
