@@ -1,0 +1,70 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>TestApp.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="appsettings.json" />
+    <None Remove="Icons\clear_24.png" />
+    <None Remove="Icons\division_48.png" />
+    <None Remove="Icons\division_add_24.png" />
+    <None Remove="Icons\division_edit_24.png" />
+    <None Remove="Icons\division_remove_24.png" />
+    <None Remove="Icons\employee.png" />
+    <None Remove="Icons\employee_48.png" />
+    <None Remove="Icons\employee_add.png" />
+    <None Remove="Icons\employee_add_24.png" />
+    <None Remove="Icons\employee_delete.png" />
+    <None Remove="Icons\employee_edit.png" />
+    <None Remove="Icons\employee_edit_24.png" />
+    <None Remove="Icons\employee_remove_24.png" />
+    <None Remove="Icons\order_48.png" />
+    <None Remove="Icons\order_add_24.png" />
+    <None Remove="Icons\order_edit_24.png" />
+    <None Remove="Icons\order_remove_24.png" />
+    <None Remove="Icons\search_24.png" />
+    <None Remove="Icons\seed_24.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.6" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.19" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TestApp.Model\TestApp.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\clear_24.png" />
+    <Resource Include="Icons\division_48.png" />
+    <Resource Include="Icons\division_add_24.png" />
+    <Resource Include="Icons\division_edit_24.png" />
+    <Resource Include="Icons\division_remove_24.png" />
+    <Resource Include="Icons\employee_48.png" />
+    <Resource Include="Icons\employee_add_24.png" />
+    <Resource Include="Icons\employee_edit_24.png" />
+    <Resource Include="Icons\employee_remove_24.png" />
+    <Resource Include="Icons\order_48.png" />
+    <Resource Include="Icons\order_add_24.png" />
+    <Resource Include="Icons\order_edit_24.png" />
+    <Resource Include="Icons\order_remove_24.png" />
+    <Resource Include="Icons\search_24.png" />
+    <Resource Include="Icons\seed_24.png" />
+  </ItemGroup>
+
+</Project>
